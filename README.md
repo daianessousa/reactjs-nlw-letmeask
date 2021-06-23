@@ -1,5 +1,3 @@
-# Letmeask 🚀 
-
 <h1 align="center">
   <img alt="Letmeask" title="#Letmeask" src="./src/assets/images/logo.svg" />
 </h1>

@@ -1,7 +1,7 @@
 # Letmeask 🚀 
 
 <h1 align="center">
-  <img alt="Letmeask" title="#Letmeask" src="./assets/logo.png" />
+  <img alt="Letmeask" title="#Letmeask" src="./src/assets/images/logo.png" />
 </h1>
 
 ## Sobre o Projeto

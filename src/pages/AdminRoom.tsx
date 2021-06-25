@@ -9,6 +9,7 @@ import { useRoom } from '../hooks/useRoom';
 import deleteImg from '../assets/images/delete.svg'
 import '../styles/room.scss';
 import { database } from '../services/firebase';
+import { useHistory } from 'react-router-dom';
 
 
 type RoomParams = {
@@ -20,8 +21,16 @@ export function AdminRoom(){
   //const { user } = useAuth();
   const params = useParams<RoomParams>();
   const roomId = params.id;
-  const { title, questions} = useRoom(roomId)
+  const { title, questions} = useRoom(roomId); 
+  const history = useHistory();
 
+  async function handleEndRoom() {
+    database.ref(`rooms/${roomId}`).update({
+      endedAt: new Date(),
+    })
+
+    history.push('/');
+  }
   async function handleDeleteQuestion(questionId: string){
     if(window.confirm('Deseja realmente remover essa pergunta?')){
       await database.ref(`rooms/${roomId}/questions/${questionId}`).remove();
@@ -35,7 +44,7 @@ export function AdminRoom(){
           <img src={logoImg} alt="Letmeask" />
           <div>
             <RoomCode code={roomId}/>
-            <Button isOutlined>Encerrar Sala</Button>
+            <Button isOutlined onClick={handleEndRoom}>Encerrar Sala</Button>
           </div>
         </div>
       </header>

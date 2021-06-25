@@ -2,7 +2,17 @@
   <img alt="Letmeask" title="#Letmeask" src="./src/assets/images/logo.svg" />
 </h1>
 
-## Sobre o Projeto
+<h1 align="center">
+  <a href="https://letmeask-a6bf1.web.app/">Visualizar Projeto ➡</a>
+</h1>
+
+
+## Sobre o Projeto 
+
+![Badge](https://img.shields.io/badge/REACT-%237159c1?style=for-the-badge&logo=REACT) ![Badge](https://img.shields.io/badge/Firebase-%237159c1?style=for-the-badge&logo=Firebase)
+
+
+
 
 ✏ Desenvolvido durante nextlevelweek trilha ReactJs.
 
@@ -20,13 +30,12 @@ Desenvolvido por Rebecca Gonçalez, disponivel em [Figma](https://www.figma.com/
 * SCSS
 * Firebase
 
-### Features ✔
+## Features ✔
 
-- [x] Cadastro de usuário
+- [x] Autenticação de Usuários
 - [x] Criação de Salas
 - [x] Envio de Perguntas em tempo real
-- [ ] Curtir perguntas
-- [ ] Excluir salas
-
-
-## Executando o Projeto
+- [x] Curtir perguntas
+- [x] Excluir salas
+- [x] Configurações do Admnistrador
+- [ ] Responsividade
